@@ -28,8 +28,8 @@
 .Weather canvas {
   display: inline-block;
   margin-top: unset;
-  margin-bottom: 5px;
-  vertical-align: top;
+  vertical-align: middle; /* Adjust vertical alignment */
+  margin-bottom: 25px;
 }
 
 .Weather .temperature {
@@ -38,6 +38,7 @@
   color: rgb(33, 33, 33);
   line-height: 64px;
   margin-left: 5px;
+  display: inline-block; /* Display temperature inline */
 }
 
 .Weather .unit {
@@ -47,4 +48,21 @@
   top: -34px;
   color: rgb(33, 33, 33);
   line-height: 1;
+  display: inline-block; /* Display unit inline */
+  margin-left: 5px; /* Add some spacing between temperature and unit */
+}
+
+.Weather .row {
+  display: flex;
+}
+
+.Weather .col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+
+
+.Weather .float-left {
+  display: inline-block; /* Change display property to inline-block */
 }
