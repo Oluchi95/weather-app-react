@@ -27,7 +27,7 @@ export default function WeatherIcon(props) {
     <ReactAnimatedWeather
       icon={codeMapping[props.code]} // Use bracket notation to access dynamic property
       color="yellow"
-      size={59}
+      size={props.size}
       animate={true}
     />
   );
